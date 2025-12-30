@@ -3,14 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* COLORS */
+/* COLOR VARIABLES */
 :root {
-    --primary: #b19cd9;  /* Lavender */
-    --secondary: #8a64c7;
-    --light: #f5f3fa;
+    --primary: #b19cd9;      /* Lavender */
+    --secondary: #8a64c7;    /* Dark Lavender */
+    --light: #f5f3fa;        /* Light Background */
     --dark-text: #333;
 }
 
@@ -58,7 +58,7 @@
     width: 100%;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
     height: 80vh;
     background: linear-gradient(120deg, var(--primary), var(--secondary));
@@ -226,3 +226,9 @@ footer {
     to {opacity:1; transform: translateY(0);}
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {padding: 16px 30px;}
+    .hero-content h1 {font-size: 36px;}
+    .products {padding: 60px 30px;}
+}
