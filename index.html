@@ -13,31 +13,38 @@
     <div class="logo">Shopping Mart</div>
     <nav>
         <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Categories</a>
+        <a href="#products">Shop</a>
+        <a href="#categories">Categories</a>
         <a href="#">Offers</a>
         <a href="#">Contact</a>
     </nav>
 </header>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
     <div class="hero-content">
         <h1>Shop Smart, Live Stylish</h1>
-        <p>Discover amazing products at your fingertips</p>
+        <p>Discover amazing products with vibrant deals</p>
         <a href="#products" class="btn">Start Shopping</a>
+    </div>
+    <div class="hero-decor">
+        <span class="circle c1"></span>
+        <span class="circle c2"></span>
+        <span class="circle c3"></span>
+        <span class="circle c4"></span>
     </div>
 </section>
 
 <!-- CATEGORIES -->
-<section class="categories">
+<section class="categories" id="categories">
     <h2>Shop by Category</h2>
     <div class="category-track">
-        <div class="category">Electronics</div>
-        <div class="category">Fashion</div>
-        <div class="category">Footwear</div>
-        <div class="category">Accessories</div>
-        <div class="category">Home</div>
+        <div class="category" style="--clr:#ff6b6b;">Electronics</div>
+        <div class="category" style="--clr:#feca57;">Fashion</div>
+        <div class="category" style="--clr:#48dbfb;">Footwear</div>
+        <div class="category" style="--clr:#1dd1a1;">Accessories</div>
+        <div class="category" style="--clr:#ff9ff3;">Home</div>
+        <div class="category" style="--clr:#576574;">Gadgets</div>
     </div>
 </section>
 
@@ -46,12 +53,14 @@
     <h2>Featured Products</h2>
     <div class="product-grid">
         <div class="product-card">
+            <span class="badge">Featured</span>
             <img src="https://via.placeholder.com/250" alt="Wireless Headphones">
             <h3>Wireless Headphones</h3>
             <p class="price">₹2,999</p>
             <button>Add to Cart</button>
         </div>
         <div class="product-card">
+            <span class="badge">New</span>
             <img src="https://via.placeholder.com/250" alt="Smart Watch">
             <h3>Smart Watch</h3>
             <p class="price">₹4,499</p>
@@ -64,6 +73,7 @@
             <button>Add to Cart</button>
         </div>
         <div class="product-card">
+            <span class="badge">Hot</span>
             <img src="https://via.placeholder.com/250" alt="Backpack">
             <h3>Backpack</h3>
             <p class="price">₹1,299</p>
@@ -74,8 +84,9 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2025 Shopping Mart | Elegant Online Shopping</p>
+    <p>© 2025 Shopping Mart | Colorful Online Shopping</p>
 </footer>
 
 </body>
 </html>
+
