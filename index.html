@@ -10,99 +10,99 @@
 
 <!-- NAVBAR -->
 <header class="navbar">
-    <div class="logo">Shopping Mart</div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#products">Shop</a>
-        <a href="#categories">Categories</a>
-        <a href="#">Offers</a>
-        <a href="#">Contact</a>
-    </nav>
-    <div class="cart">
-        <span class="cart-icon">🛒</span>
-        <span class="cart-count">0</span>
-    </div>
-    <div class="hamburger">
-        <span></span><span></span><span></span>
-    </div>
+  <div class="logo">Shopping Mart</div>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#products">Shop</a>
+    <a href="#categories">Categories</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="cart">
+    <span class="cart-icon">🛒</span>
+    <span class="cart-count">0</span>
+  </div>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Shop Smart, Live Stylish</h1>
-        <p>Discover premium products with amazing deals</p>
-        <a href="#products" class="btn">Start Shopping</a>
-    </div>
-    <div class="hero-shapes">
-        <span class="shape s1"></span>
-        <span class="shape s2"></span>
-        <span class="shape s3"></span>
-        <span class="shape s4"></span>
-    </div>
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>Shop Smart, Live Stylish</h1>
+    <p>Discover premium products with amazing deals</p>
+    <a href="#products" class="btn">Start Shopping</a>
+  </div>
+  <div class="hero-shapes">
+    <span class="shape s1"></span>
+    <span class="shape s2"></span>
+    <span class="shape s3"></span>
+    <span class="shape s4"></span>
+    <span class="shape s5"></span>
+  </div>
 </section>
 
 <!-- CATEGORIES -->
 <section class="categories" id="categories">
-    <h2>Shop by Category</h2>
-    <div class="category-track">
-        <div class="category" style="--clr:#ff6b6b;">Electronics</div>
-        <div class="category" style="--clr:#feca57;">Fashion</div>
-        <div class="category" style="--clr:#48dbfb;">Footwear</div>
-        <div class="category" style="--clr:#1dd1a1;">Accessories</div>
-        <div class="category" style="--clr:#ff9ff3;">Home</div>
-        <div class="category" style="--clr:#576574;">Gadgets</div>
-    </div>
+  <h2>Shop by Category</h2>
+  <div class="category-track">
+    <div class="category" style="--clr:#ff6b6b;">Electronics</div>
+    <div class="category" style="--clr:#feca57;">Fashion</div>
+    <div class="category" style="--clr:#48dbfb;">Footwear</div>
+    <div class="category" style="--clr:#1dd1a1;">Accessories</div>
+    <div class="category" style="--clr:#ff9ff3;">Home</div>
+    <div class="category" style="--clr:#576574;">Gadgets</div>
+  </div>
 </section>
 
 <!-- FEATURED PRODUCTS -->
 <section class="products" id="products">
-    <h2>Featured Products</h2>
-    <div class="product-grid">
-        <div class="product-card">
-            <span class="badge">Featured</span>
-            <img src="https://via.placeholder.com/250" alt="Wireless Headphones">
-            <h3>Wireless Headphones</h3>
-            <p class="price">₹2,999</p>
-            <button class="add-cart">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <span class="badge new">New</span>
-            <img src="https://via.placeholder.com/250" alt="Smart Watch">
-            <h3>Smart Watch</h3>
-            <p class="price">₹4,499</p>
-            <button class="add-cart">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <span class="badge hot">Hot</span>
-            <img src="https://via.placeholder.com/250" alt="Running Shoes">
-            <h3>Running Shoes</h3>
-            <p class="price">₹3,799</p>
-            <button class="add-cart">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://via.placeholder.com/250" alt="Backpack">
-            <h3>Backpack</h3>
-            <p class="price">₹1,299</p>
-            <button class="add-cart">Add to Cart</button>
-        </div>
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <span class="badge">Featured</span>
+      <img src="https://via.placeholder.com/250" alt="Wireless Headphones">
+      <h3>Wireless Headphones</h3>
+      <p class="price">₹2,999</p>
+      <button class="add-cart">Add to Cart</button>
     </div>
+    <div class="product-card">
+      <span class="badge new">New</span>
+      <img src="https://via.placeholder.com/250" alt="Smart Watch">
+      <h3>Smart Watch</h3>
+      <p class="price">₹4,499</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <span class="badge hot">Hot</span>
+      <img src="https://via.placeholder.com/250" alt="Running Shoes">
+      <h3>Running Shoes</h3>
+      <p class="price">₹3,799</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250" alt="Backpack">
+      <h3>Backpack</h3>
+      <p class="price">₹1,299</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </div>
 </section>
 
-<!-- PRODUCT MODAL -->
-<div class="modal" id="product-modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <img src="" alt="Product Image" id="modal-img">
-        <h3 id="modal-title">Product Name</h3>
-        <p id="modal-price">₹0</p>
-        <button>Add to Cart</button>
-    </div>
-</div>
+<!-- OFFERS SECTION -->
+<section class="offers" id="offers">
+  <h2>Exclusive Offers</h2>
+  <div class="offer-grid">
+    <div class="offer-card">Up to 50% off Electronics</div>
+    <div class="offer-card">Fashion Clearance Sale</div>
+    <div class="offer-card">Buy 1 Get 1 Accessories</div>
+  </div>
+</section>
 
 <!-- FOOTER -->
-<footer>
-    <p>© 2025 Shopping Mart | Premium Online Shopping</p>
+<footer id="contact">
+  <p>© 2025 Shopping Mart | Premium Online Shopping</p>
 </footer>
 
 <script src="script.js"></script>
