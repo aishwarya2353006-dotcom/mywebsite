@@ -1,13 +1,14 @@
-// HAMBURGER MENU
+// Hamburger Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.navbar nav');
-hamburger.addEventListener('click', ()=>{navMenu.classList.toggle('active');});
+hamburger.addEventListener('click', () => navMenu.classList.toggle('active'));
 
-// CART BUTTON
+// Cart Button Counter
 let cartCount = 0;
-document.querySelectorAll('.add-cart').forEach(btn=>{
-  btn.addEventListener('click', ()=>{
+document.querySelectorAll('.add-cart').forEach(btn => {
+  btn.addEventListener('click', () => {
     cartCount++;
     document.querySelector('.cart-count').textContent = cartCount;
   });
 });
+
