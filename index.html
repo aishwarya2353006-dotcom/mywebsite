@@ -2,51 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Advanced UI Website</title>
+    <title>Multi-Option Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">CloudSite</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">MyWeb</div>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Features ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Responsive</a></li>
+                <li><a href="#">Cloud Hosting</a></li>
+                <li><a href="#">Fast Load</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Deploy Websites on the Cloud</h1>
-        <p>Modern UI using only HTML & CSS</p>
-        <a href="#" class="btn">Get Started</a>
-    </section>
+<!-- HERO -->
+<section class="hero">
+    <h1>Advanced Website UI</h1>
+    <p>Multiple options using only HTML & CSS</p>
+    <a href="#" class="btn">Explore</a>
+</section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="card">
-            <h3>Responsive Design</h3>
-            <p>Looks great on mobile, tablet, and desktop screens.</p>
-        </div>
+<!-- OPTIONS / FEATURES -->
+<section class="options">
+    <div class="box">
+        <h3>Dashboard</h3>
+        <p>User-friendly admin dashboard UI.</p>
+    </div>
+    <div class="box">
+        <h3>Analytics</h3>
+        <p>Track website performance visually.</p>
+    </div>
+    <div class="box">
+        <h3>Security</h3>
+        <p>Secure cloud-hosted architecture.</p>
+    </div>
+    <div class="box">
+        <h3>Customization</h3>
+        <p>Fully customizable layouts.</p>
+    </div>
+</section>
 
-        <div class="card">
-            <h3>Cloud Hosted</h3>
-            <p>Free hosting using GitHub Pages.</p>
-        </div>
+<!-- SERVICES -->
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+        <div class="card">Web Development</div>
+        <div class="card">Cloud Deployment</div>
+        <div class="card">UI Design</div>
+        <div class="card">Maintenance</div>
+    </div>
+</section>
 
-        <div class="card">
-            <h3>Pure HTML & CSS</h3>
-            <p>No JavaScript required for interactivity.</p>
-        </div>
-    </section>
+<!-- PRICING -->
+<section class="pricing">
+    <div class="price-card">
+        <h3>Basic</h3>
+        <p>$0 / month</p>
+        <span>Static Website</span>
+    </div>
+    <div class="price-card highlight">
+        <h3>Pro</h3>
+        <p>$10 / month</p>
+        <span>Advanced UI</span>
+    </div>
+    <div class="price-card">
+        <h3>Premium</h3>
+        <p>$25 / month</p>
+        <span>Cloud + Support</span>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Advanced UI Website | GitHub Pages</p>
-    </footer>
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Multi-Option Website | GitHub Pages</p>
+</footer>
 
 </body>
 </html>
+
