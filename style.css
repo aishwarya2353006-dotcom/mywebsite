@@ -5,42 +5,64 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* FLOATING CART */
+.cart {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: #00f2ff;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.cart span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 3px 7px;
+    border-radius: 50%;
+}
+
 /* NAVBAR */
 .navbar {
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
     padding: 18px 80px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(10px);
-    z-index: 1000;
+    z-index: 100;
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 26px;
     color: #00f2ff;
+    font-weight: bold;
 }
 
 nav a {
     color: white;
-    margin-left: 35px;
+    margin-left: 30px;
     text-decoration: none;
-    font-size: 16px;
     position: relative;
 }
 
 nav a::after {
     content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
     width: 0;
     height: 2px;
     background: #00f2ff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
     transition: 0.4s;
 }
 
@@ -51,17 +73,16 @@ nav a:hover::after {
 /* HERO */
 .hero {
     height: 100vh;
-    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    animation: fadeIn 1.5s ease;
 }
 
 .hero-content h1 {
-    font-size: 55px;
     color: white;
+    font-size: 52px;
     animation: slideDown 1s ease;
 }
 
@@ -76,49 +97,76 @@ nav a:hover::after {
     border: none;
     border-radius: 30px;
     background: #00f2ff;
-    color: black;
-    font-weight: bold;
     cursor: pointer;
-    transition: transform 0.4s, box-shadow 0.4s;
+    font-weight: bold;
+    transition: transform 0.4s;
 }
 
 .hero-content button:hover {
     transform: scale(1.1);
-    box-shadow: 0 15px 30px rgba(0,242,255,0.5);
+}
+
+/* CATEGORIES */
+.categories {
+    padding: 80px;
+    background: #111;
+    color: white;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category-track {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category {
+    padding: 15px 30px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.category:hover {
+    background: #00f2ff;
+    color: black;
+    transform: scale(1.1);
 }
 
 /* PRODUCTS */
 .products {
-    padding: 120px 80px;
+    padding: 80px;
     background: #0f2027;
 }
 
 .products h2 {
     text-align: center;
     color: white;
-    margin-bottom: 50px;
-    font-size: 36px;
+    margin-bottom: 40px;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     gap: 40px;
 }
 
 .product-card {
     background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
     padding: 20px;
+    border-radius: 20px;
     text-align: center;
     color: white;
-    transition: transform 0.5s, box-shadow 0.5s;
+    transition: transform 0.5s;
 }
 
 .product-card:hover {
-    transform: translateY(-20px) rotateX(8deg);
-    box-shadow: 0 30px 50px rgba(0,0,0,0.6);
+    transform: translateY(-15px);
 }
 
 .product-card img {
@@ -132,6 +180,15 @@ nav a:hover::after {
     font-size: 20px;
 }
 
+.product-card button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background: #00f2ff;
+    cursor: pointer;
+}
+
 /* FOOTER */
 footer {
     background: black;
@@ -141,18 +198,12 @@ footer {
 }
 
 /* ANIMATIONS */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 @keyframes slideDown {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {transform: translateY(-50px); opacity:0;}
+    to {transform: translateY(0); opacity:1;}
 }
 
 @keyframes slideUp {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {transform: translateY(50px); opacity:0;}
+    to {transform: translateY(0); opacity:1;}
 }
-
