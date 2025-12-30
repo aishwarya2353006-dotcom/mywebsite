@@ -18,6 +18,13 @@
         <a href="#">Offers</a>
         <a href="#">Contact</a>
     </nav>
+    <div class="cart">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count">0</span>
+    </div>
+    <div class="hamburger">
+        <span></span><span></span><span></span>
+    </div>
 </header>
 
 <!-- HERO -->
@@ -57,35 +64,48 @@
             <img src="https://via.placeholder.com/250" alt="Wireless Headphones">
             <h3>Wireless Headphones</h3>
             <p class="price">₹2,999</p>
-            <button>Add to Cart</button>
+            <button class="add-cart">Add to Cart</button>
         </div>
         <div class="product-card">
             <span class="badge new">New</span>
             <img src="https://via.placeholder.com/250" alt="Smart Watch">
             <h3>Smart Watch</h3>
             <p class="price">₹4,499</p>
-            <button>Add to Cart</button>
+            <button class="add-cart">Add to Cart</button>
         </div>
         <div class="product-card">
             <span class="badge hot">Hot</span>
             <img src="https://via.placeholder.com/250" alt="Running Shoes">
             <h3>Running Shoes</h3>
             <p class="price">₹3,799</p>
-            <button>Add to Cart</button>
+            <button class="add-cart">Add to Cart</button>
         </div>
         <div class="product-card">
             <img src="https://via.placeholder.com/250" alt="Backpack">
             <h3>Backpack</h3>
             <p class="price">₹1,299</p>
-            <button>Add to Cart</button>
+            <button class="add-cart">Add to Cart</button>
         </div>
     </div>
 </section>
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="product-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="" alt="Product Image" id="modal-img">
+        <h3 id="modal-title">Product Name</h3>
+        <p id="modal-price">₹0</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
     <p>© 2025 Shopping Mart | Premium Online Shopping</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
+
