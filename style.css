@@ -1,32 +1,51 @@
 /* RESET */
-* {margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif;}
-:root {--primary:#c3b1e1; --secondary:#8a64c7; --light:#f5f3fa; --dark:#333;}
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+:root {
+  --primary:#c3b1e1;
+  --secondary:#8a64c7;
+  --light:#f5f3fa;
+  --dark:#333;
+}
+
+/* BODY */
+body {scroll-behavior:smooth; background:#f7f4fa;}
 
 /* NAVBAR */
-.navbar {display:flex; justify-content:space-between; align-items:center; padding:18px 50px; background:#fff; box-shadow:0 4px 20px rgba(0,0,0,0.08); position:sticky; top:0; z-index:1000;}
-.logo {font-size:28px; font-weight:bold; background: linear-gradient(90deg,#ff6b6b,#48dbfb,#1dd1a1); -webkit-background-clip:text; -webkit-text-fill-color:transparent; animation: rainbowText 5s linear infinite;}
-@keyframes rainbowText {0%{background-position:0%}100%{background-position:100%}}
-.navbar nav a {margin-left:30px; text-decoration:none; color:var(--dark); font-weight:500; position:relative; transition:.3s;}
-.navbar nav a::after {content:""; position:absolute; left:0; bottom:-5px; width:0; height:2px; background:var(--secondary); transition:.3s;}
-.navbar nav a:hover::after {width:100%;}
+.navbar {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px 50px; background:#fff; box-shadow:0 4px 20px rgba(0,0,0,0.08);
+  position:sticky; top:0; z-index:1000;
+}
+.logo {font-size:28px; font-weight:bold; background: linear-gradient(90deg,#ff6b6b,#48dbfb,#1dd1a1); -webkit-background-clip:text; -webkit-text-fill-color:transparent;}
+.navbar nav {display:flex; gap:25px; align-items:center; position:relative;}
+.navbar nav a {text-decoration:none; color:var(--dark); font-weight:500; position:relative;}
+.dropdown {position:relative; cursor:pointer;}
+.dropdown-menu {
+  display:none; position:absolute; top:25px; left:0; background:#fff;
+  border-radius:12px; padding:10px; box-shadow:0 10px 25px rgba(0,0,0,0.15); flex-direction:column;
+}
+.dropdown:hover .dropdown-menu {display:flex; flex-direction:column;}
+.dropdown-menu a {padding:8px 15px; color:#333; border-radius:8px; text-decoration:none;}
+.dropdown-menu a:hover {background:#c3b1e1; color:#fff;}
 .cart {position:relative; cursor:pointer;}
 .cart-count {position:absolute; top:-8px; right:-8px; background:#ff6b6b; color:#fff; font-size:12px; width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center;}
 .hamburger {display:none; flex-direction:column; gap:5px; cursor:pointer;}
 .hamburger span{width:25px; height:3px; background:#333; border-radius:2px;}
 
 /* HERO */
-.hero {position:relative; height:90vh; background: linear-gradient(135deg,#ff9ff3,#48dbfb,#1dd1a1); display:flex; justify-content:center; align-items:center; text-align:center; color:#fff; overflow:hidden;}
+.hero {position:relative; height:90vh; display:flex; justify-content:center; align-items:center; text-align:center; color:#fff; overflow:hidden; background: linear-gradient(135deg,#ff9ff3,#48dbfb,#1dd1a1);}
 .hero-content h1 {font-size:50px; margin-bottom:15px; text-shadow:0 2px 10px rgba(0,0,0,0.2); animation: slideDown 1s ease forwards;}
 .hero-content p {font-size:18px; margin-bottom:25px; animation: slideUp 1s ease forwards;}
-.btn {padding:16px 45px; background: linear-gradient(45deg,#ff6b6b,#feca57,#1dd1a1); border-radius:35px; text-decoration:none; font-weight:bold; color:#fff; box-shadow:0 10px 25px rgba(0,0,0,0.15); transition:.4s;}
+.btn {padding:16px 45px; background: linear-gradient(45deg,#ff6b6b,#feca57,#1dd1a1); border-radius:35px; color:#fff; font-weight:bold; text-decoration:none; box-shadow:0 10px 25px rgba(0,0,0,0.15); transition:.4s;}
 .btn:hover {transform:translateY(-3px) scale(1.05);}
 .hero-shapes .shape {position:absolute; border-radius:50%; opacity:0.2; animation: float 6s ease-in-out infinite;}
 .hero-shapes .s1 { width:200px; height:200px; background:#fff; top:10%; left:10%; }
 .hero-shapes .s2 { width:150px; height:150px; background:#fff; top:50%; right:15%; }
 .hero-shapes .s3 { width:100px; height:100px; background:#fff; top:70%; left:50%; }
 .hero-shapes .s4 { width:120px; height:120px; background:#fff; top:30%; right:40%; }
-.hero-shapes .s5 { width:80px; height:80px; background:#fff; top:60%; left:20%; }
-@keyframes float {0%,100%{transform:translateY(0px);}50%{transform:translateY(-20px);}}
+@keyframes float {0%,100%{transform:translateY(0);}50%{transform:translateY(-20px);}}
+@keyframes slideDown {from{opacity:0; transform:translateY(-50px);} to{opacity:1; transform:translateY(0);}}
+@keyframes slideUp {from{opacity:0; transform:translateY(50px);} to{opacity:1; transform:translateY(0);}}
 
 /* CATEGORIES */
 .categories {padding:60px; text-align:center;}
@@ -59,10 +78,6 @@
 
 /* FOOTER */
 footer {background:var(--light); text-align:center; padding:25px; color:#555;}
-
-/* ANIMATIONS */
-@keyframes slideDown {from{opacity:0; transform:translateY(-50px);} to{opacity:1; transform:translateY(0);}}
-@keyframes slideUp {from{opacity:0; transform:translateY(50px);} to{opacity:1; transform:translateY(0);}}
 
 /* RESPONSIVE */
 @media (max-width:768px){
